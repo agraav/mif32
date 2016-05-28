@@ -35,8 +35,17 @@ struct Hash{
   int value; // valeur du hash
 } typedef Hash;
 
-void integration(){
+int isInside(Point* p, Zone* z) //Return 1 if the point is inside the zone, 0 else
+{
+	if (p->x >= z->x1 && p->x <= z->x2 && p->y >= z->y1 && p->y <= z->y2)
+		return 1;
+	else
+		return 0;
+}
 
+void integration(Point* ptemp, Point* p, Zone* ztemp, Zone* z){
+	/* 
+	*/
 }
 
 int main(int argc, char ** argv){
