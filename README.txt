@@ -1,4 +1,4 @@
 Pour compiler :
-mipcc main.c
+mipcc -o a main.c
 Executer :
 mpirun -np 10 a.out
